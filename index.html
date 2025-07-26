@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#1e293b'
+          },
+          borderRadius: {
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation -->
+  <nav class="bg-secondary text-white px-6 py-4 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="font-['Pacifico'] text-xl">Portfolio</div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="hover:text-primary">HOME</a>
+        <a href="#about" class="hover:text-primary">ABOUT ME</a>
+        <a href="#skills" class="hover:text-primary">SKILL</a>
+        <a href="#project" class="hover:text-primary">PROJECT</a>
+        <a href="#resume" class="hover:text-primary">RESUME</a>
+        <a href="#contact" class="hover:text-primary">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-6 w-full">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-white space-y-6">
+          <div class="text-sm uppercase tracking-wider text-gray-300">Fresher</div>
+          <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+            NIHARIKA<br>
+            <span class="text-primary">KUSHWAHA</span>
+          </h1>
+          <p class="text-lg text-gray-300 leading-relaxed max-w-lg">
+            Dedicated and analytical MCA graduate looking to begin my career as a Software Developer.
+          </p>
+          <button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-button font-medium">
+            Hire Me
+          </button>
+        </div>
+       <div class="relative">
+                    <div class="relative z-10">
+                        <img src="ni pic.jpg"
+                             alt="Alexander Scottish" 
+                             class="w-full max-w-md mx-auto rounded-lg object-cover object-top">
+                    </div>
+                    <div class="absolute -bottom-14 -left-14 z-0 opacity-30">
+                        <img src="ni pic.jpg"
+                             alt="Profile overlay" 
+                             class="w-40 h-63 rounded-lg object-cover object-top">
+                    </div>
+                </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- About Section with Resume -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <img src="ni pic.jpg" alt="About Image" class="w-full max-w-sm rounded-lg object-cover">
+        </div>
+        <div class="space-y-6">
+          <h2 class="text-4xl font-bold text-secondary mb-2">ABOUT ME</h2>
+          <div class="w-16 h-1 bg-primary mb-4"></div>
+
+          <p class="text-lg text-gray-600">
+            I am a recent MCA graduate with strong programming and problem-solving skills. I am eager to learn, grow, and contribute to a dynamic team.
+          </p>
+          <p class="text-gray-600">
+            I am a passionate and motivated computer science graduate (MCA, 2025) with a solid understanding of programming concepts, data structures, and software development. I’ve worked on academic projects that sharpened my skills in DSA, web development, and databases.
+          </p>
+
+          <!-- Resume Buttons -->
+          <div class="flex flex-wrap gap-4">
+            <a href="Niharika_final_resume[1].pdf" download class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-button font-medium">
+              DOWNLOAD RESUME
+            </a>
+           
+          </div>
+
+          <!-- Hidden Resume Viewer -->
+          <iframe id="resumeFrame"
+                  src="Niharika-Kushwaha-Resume.pdf"
+                  class="w-full h-[600px] mt-6 rounded-lg border border-gray-300 hidden"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-secondary">MY SKILLS</h2>
+        <div class="w-16 h-1 bg-primary mx-auto my-4"></div>
+        <p class="text-gray-600 max-w-xl mx-auto">Key technologies I use to build effective solutions.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div>
+            <label class="text-secondary font-medium">Html</label>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="text-secondary font-medium">Css</label>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="text-secondary font-medium">Java</label>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" style="width: 88%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div>
+            <label class="text-secondary font-medium">Python</label>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="text-secondary font-medium">UI/UX Design</label>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="text-secondary font-medium">Database Management</label>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-secondary text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold">GET IN TOUCH</h2>
+        <div class="w-16 h-1 bg-primary mx-auto my-4"></div>
+        <p class="text-gray-300">Let's collaborate and create something great together!</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <i class="ri-map-pin-line text-primary text-xl"></i>
+            <span>Kanpur, India</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <i class="ri-mail-line text-primary text-xl"></i>
+            <span>niharikakushwaha7752@email.com</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <i class="ri-phone-line text-primary text-xl"></i>
+            <span>+91 8957676240</span>
+          </div>
+        </div>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-white/10 border border-white/20 text-white placeholder-gray-300"/>
+          <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-white/10 border border-white/20 text-white placeholder-gray-300"/>
+          <input type="text" placeholder="Subject" class="w-full p-3 rounded bg-white/10 border border-white/20 text-white placeholder-gray-300"/>
+          <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded bg-white/10 border border-white/20 text-white placeholder-gray-300"></textarea>
+          <button type="submit" class="bg-primary hover:bg-blue-600 px-6 py-3 rounded-button text-white font-medium">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    © 2025 Niharika Kushwaha | All Rights Reserved
+  </footer>
+
+  <!-- Resume Script -->
+  <script>
+    function showResume() {
+      const resumeFrame = document.getElementById("resumeFrame");
+      resumeFrame.classList.remove("hidden");
+      resumeFrame.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
